@@ -4,14 +4,14 @@ import gettext
 import glob
 import locale
 import setproctitle
-
 import gi
-gi.require_version("Gtk", "3.0")
-gi.require_version('XApp', '1.0')
 from gi.repository import Gtk, Gdk, GdkPixbuf, XApp
 
 import keybinding
 from xapp.GSettingsWidgets import *
+
+gi.require_version("Gtk", "3.0")
+gi.require_version('XApp', '1.0')
 
 # i18n
 gettext.install("mintmenu", "/usr/share/linuxmint/locale")
